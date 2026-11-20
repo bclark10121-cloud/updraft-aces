@@ -4,6 +4,7 @@ Updated 2026-11-20. BC decides the order. Plan: `ideas/n63/PLAN.md` in game-stud
 
 ## Done
 
+- 0.4.1 (2026-11-20): the start screen line says "A pilot" in place of "A bearded pilot" (BC: "change a bearded pilot, to just say pilot on the start screen, remove bearded"). The game page and Shelf tag match.
 - 0.4.0 (2026-11-20): painted islands (lighthouse, windmill, dock) and clouds, the side-view twin-engine on the start screen, the app icon (BC's pick C, repainted with the twin-engine), the name check (web search: no game named Updraft Aces).
 - 0.3.1 (2026-11-20): the play area fills the whole screen, upright and sideways, so you fly edge to edge (BC: "I need to be able to go edge to edge in flying in the game"). The player plane's left wing tip and the pilot's edge were clipped by the cut and are whole again (BC: "Left side of wing seems to be cutoff").
 - 0.3.0 (2026-11-20): BC's picks in. Twin-engine plane, coral monoplane wingmen, the storm olive and teal enemy set (fighter, swooper, gunner), the braided ginger pilot on the start screen, Titan One, Call to Adventure on the start screen and Beachfront Celebration in flight. Pilots: a sea shader under the planes and GPU particles for the smoke trail and bursts. Art cut from Gemini by `art_src/cut_art.py`.
