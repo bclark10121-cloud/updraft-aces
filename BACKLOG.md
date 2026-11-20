@@ -4,6 +4,7 @@ Updated 2026-11-20. BC decides the order. Plan: `ideas/n63/PLAN.md` in game-stud
 
 ## Done
 
+- 0.13.0 (2026-11-20): BC's ask "a little faster when playing on widescreen, maybe add speed power ups": side to side speed grows with the screen's width, plus a pink Speed power-up (two levels). Review ideas 4 (bullet walls only a roll beats), 14 (menu rows at least 48 dp on phones, kit 1.24.0), 21 (gold coins), 28 (`play.gd` split in three), 32 (checkpoint save measured) and 34 (focus guard and particle helpers moved into kit 1.24.0). D1 answered: keep power-ups through a rewind. D2 answered: the guns keep firing through a roll. Stage 4 decision page out.
 - 0.12.0 (2026-11-20): review ideas 20 (rescue rafts), 22 (Score Attack) and 30 (tests for the 0.5 features).
 - 0.11.0 (2026-11-20): review ideas 11 (power-up tokens), 12 (sound and combo chime), 13 (start screen), 19 (breathers and the Grand Armada), 29 (lighter shader) and 31 (smaller music). BC: "game plays good, move to the next release".
 - 0.10.0 (2026-11-20): Stage 3, Aurora North (BC's picks: Aurora North, Balloon mines, Heroic Age). `data/stage3.ldtk` from `tools/make_stage3_ldtk.py`, 42 waves in six sections. Balloon mines, a night sea in the shader, four more medals, achievement Northern Lights.
@@ -46,7 +47,7 @@ BC: "take a few minutes to review this game again with multiple agents and sugge
 1. Done in 0.7. Enemy fire patterns: small planes fire short fans or streams, swoopers fire too. Today each small plane fires one aimed shot and most die in 1.4 s, so moving beats every shot. M.
 2. Done in 0.7. Ace different in kind: small planes fire twice, Ace-only waves (a new LDtk field). S to M.
 3. Difficulty that rises across a stage: bullets per Stage 1 section run 13, 14, 6, 2, 12, 12. Fewer power-up drops (14 in 48 waves), denser late waves. M.
-4. Partly done in 0.7 (close shave points and pops; roll-only threats still open). Give the roll a job: threats only a roll beats (close flak, bullet walls), points and a "Close shave!" pop for rolling through bullets. S to M.
+4. Done in 0.13 (bullet walls, close shave points from 0.7). Give the roll a job: threats only a roll beats (close flak, bullet walls), points and a "Close shave!" pop for rolling through bullets. S to M.
 5. Done in 0.7. Pressure checks in the test gate: minimum bullets per section and a weaving bot that takes some hits on Ace. S.
 
 ### Feel and readability
@@ -59,7 +60,7 @@ BC: "take a few minutes to review this game again with multiple agents and sugge
 11. Done in 0.11. Power-ups with their own shapes and icons in the game font (Spread is the same cream as your shots today). S to M.
 12. Done in 0.11. Softer shot sound (it plays 9 times a second) and a rising combo chime. Softer default hurt flash (35 percent). S.
 13. Done in 0.11. Start screen on upright phones: pilot not cut off, bigger hint text. Records panel and menu header polish. S.
-14. Bigger menu rows on phones (32 px today, 48 is the phone norm). Kit change. M.
+14. Done in 0.13 (kit 1.24.0 phone fit). Bigger menu rows on phones (32 px today, 48 is the phone norm). Kit change. M.
 
 ### Replay value (from the genre review)
 
@@ -69,7 +70,7 @@ BC: "take a few minutes to review this game again with multiple agents and sugge
 18. Done in 0.8. Ace score multiplier or a best score per level. S.
 19. Done in 0.11. Breathers before checkpoints and a "Grand Armada" finale fly-past (not a boss). M.
 20. Done in 0.12. Rescue pickups: castaways on islands and mesas, hover to rescue. As in Sky Force. M.
-21. Gold pickups from ground targets (boats, windmills, carts), worth most on their bright frame. As in Strikers 1945. S.
+21. Done in 0.13 (gold coins from gunners and bombers, no ground targets yet). Gold pickups from ground targets (boats, windmills, carts), worth most on their bright frame. As in Strikers 1945. S.
 22. Done in 0.12. Score Attack: a 2 or 5 minute run for a top 10 on the device. As in Star Soldier R. S to M.
 23. Updraft gauge: coins fill it, trigger for a few seconds of bullet soaking and a multiplier. As in Jamestown. M.
 24. Daily Flight: a date-seeded stage with a twist, local best only. M.
@@ -79,22 +80,22 @@ BC: "take a few minutes to review this game again with multiple agents and sugge
 ### Under the hood
 
 27. Done in 0.8. Stage table: each stage row holds its music, scenery, clear achievement and unlock text, and the menu builds from it. Makes Stage 3 a data job. M.
-28. Split `play.gd` (1,194 lines): enemies, drawing, bot and test hooks into their own files. M.
+28. Done in 0.13 (`play_core.gd`, `play_draw.gd`, `play.gd`). Split `play.gd` (1,194 lines): enemies, drawing, bot and test hooks into their own files. M.
 29. Done in 0.11. Canyon shader skips the sea math it throws away. S.
 30. Done in 0.12. Tests for the 0.5 features: flak hits and rolls, the Flak Dancer bonus, the locked menu row, stage and unlock after a reload. M.
 31. Done in 0.11. Smaller music (re-encode at about 72 kbps, about 2 MB less on the web). S.
-32. Measure the checkpoint save on a real phone (1 to 2 ms spikes here, every 30 s). S.
+32. Done in 0.13 on a desktop: 0.2 ms median, 0.7 ms worst. A real phone is still unmeasured. Measure the checkpoint save on a real phone (1 to 2 ms spikes here, every 30 s). S.
 33. Build folder cleanup: 779 MB of old APKs and web folders. S.
-34. Kit candidates (needs BC's yes): the focus fix in `main.gd` and the particle helpers. S.
+34. Done in 0.13 (kit 1.24.0, BC said yes). Kit candidates: the focus fix in `main.gd` and the particle helpers. S.
 
 ### Needs a decision from BC
 
-- D1. (0.7 default: kept.) A rewind clears Spread and Wingmen. BRIEF.md says a rewind keeps everything. Keeping them makes the game gentler. Clearing them is more classic. Which?
-- D2. Rolling stops your guns. Keep it as the roll's cost, or let auto-fire run through a roll?
+- D1. Answered 0.13: keep them (BC). (0.7 default: kept.) A rewind clears Spread and Wingmen. BRIEF.md says a rewind keeps everything. Keeping them makes the game gentler. Clearing them is more classic. Which?
+- D2. Answered 0.13: the guns keep firing (BC). Rolling stops your guns. Keep it as the roll's cost, or let auto-fire run through a roll?
 
 ## Later
 
-- Stage 4 (Sky Gardens and Thunderhead Reach are the runner-up settings, dive gliders and the rival ace the runner-up enemies).
+- Stage 4: decision page out 2026-11-20 (Sky Gardens, Thunderhead Reach or Lantern Festival. Dive gliders, tail chasers or the rival ace. Upbeat Forever, Achilles or Danger Storm). https://bclark10121-cloud.github.io/bc-decisions/2026-11-20-n63-stage4/
 - A trademark attorney's clearance and a filing for "Updraft Aces" before a paid Play Store launch (search done in 0.6).
 
 ## Not planned (they break the pillars)
