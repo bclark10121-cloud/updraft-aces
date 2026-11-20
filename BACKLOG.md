@@ -4,6 +4,7 @@ Updated 2026-11-20. BC decides the order. Plan: `ideas/n63/PLAN.md` in game-stud
 
 ## Done
 
+- 0.9.0 (2026-11-20): review idea 10, sideways phones. A shorter play area sideways keeps everything bigger, still edge to edge.
 - 0.8.0 (2026-11-20): review ideas 15 (medals), 16 (chain), 17 (shootable flak), 18 (Ace points) and 27 (stage table).
 - 0.7.0 (2026-11-20): review ideas 1, 2, 4, 5, 6, 7, 8 and 9 (Ace with teeth plus feel). D1 set to keep power-ups through a rewind, D2 left as is. Both still BC's call.
 - 0.6.1 (2026-11-20): bugs B1 to B6 from the review. BC: "fix bugs first and go in your suggested order".
@@ -18,7 +19,7 @@ Updated 2026-11-20. BC decides the order. Plan: `ideas/n63/PLAN.md` in game-stud
 
 ## Now
 
-- Building 0.9 next: idea 10 (sideways phones), then a Stage 3 decision page.
+- Waiting on BC: the Stage 3 decision page (setting, new enemy, music).
 
 ## Asked for by BC, not built yet
 
@@ -51,7 +52,7 @@ BC: "take a few minutes to review this game again with multiple agents and sugge
 7. Done in 0.7. Hits that feel like hits: a white flash and spark on enemy hits, and "+1000" pops at the last plane instead of a mid-screen banner. S.
 8. Done in 0.7. Canyon bullets: a dark outline or a cooler color so bullets read on sand and mesas. Dust clouds no longer draw over bullets near the plane. S.
 9. Done in 0.7. HUD: three charge pips and an icon on the Roll button, a dark pill behind shield and score, a bigger score, no HUD shake. S.
-10. Sideways phones: cap the play width so the plane stays big, and put the HUD in the side margins. M.
+10. Done in 0.9 (shorter area sideways, not a capped width, to keep BC's edge to edge). Sideways phones: cap the play width so the plane stays big, and put the HUD in the side margins. M.
 11. Power-ups with their own shapes and icons in the game font (Spread is the same cream as your shots today). S to M.
 12. Softer shot sound (it plays 9 times a second) and a rising combo chime. Softer default hurt flash (35 percent). S.
 13. Start screen on upright phones: pilot not cut off, bigger hint text. Records panel and menu header polish. S.
