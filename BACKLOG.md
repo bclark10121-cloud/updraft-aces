@@ -4,6 +4,7 @@ Updated 2026-11-20. BC decides the order. Plan: `ideas/n63/PLAN.md` in game-stud
 
 ## Done
 
+- 0.10.0 (2026-11-20): Stage 3, Aurora North (BC's picks: Aurora North, Balloon mines, Heroic Age). `data/stage3.ldtk` from `tools/make_stage3_ldtk.py`, 42 waves in six sections. Balloon mines, a night sea in the shader, four more medals, achievement Northern Lights.
 - 0.9.0 (2026-11-20): review idea 10, sideways phones. A shorter play area sideways keeps everything bigger, still edge to edge.
 - 0.8.0 (2026-11-20): review ideas 15 (medals), 16 (chain), 17 (shootable flak), 18 (Ace points) and 27 (stage table).
 - 0.7.0 (2026-11-20): review ideas 1, 2, 4, 5, 6, 7, 8 and 9 (Ace with teeth plus feel). D1 set to keep power-ups through a rewind, D2 left as is. Both still BC's call.
@@ -19,7 +20,7 @@ Updated 2026-11-20. BC decides the order. Plan: `ideas/n63/PLAN.md` in game-stud
 
 ## Now
 
-- Waiting on BC: the Stage 3 decision page (setting, new enemy, music).
+- Waiting on BC: play 0.10.0, Stage 3 Aurora North.
 
 ## Asked for by BC, not built yet
 
@@ -91,7 +92,7 @@ BC: "take a few minutes to review this game again with multiple agents and sugge
 
 ## Later
 
-- Stage 3.
+- Stage 4 (Sky Gardens and Thunderhead Reach are the runner-up settings, dive gliders and the rival ace the runner-up enemies).
 - A trademark attorney's clearance and a filing for "Updraft Aces" before a paid Play Store launch (search done in 0.6).
 
 ## Not planned (they break the pillars)
