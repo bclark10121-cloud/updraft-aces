@@ -1,0 +1,37 @@
+# Publishes a GitHub Release for every docs/release-notes/v<version>.md that does not have one yet (G2.10).
+# The release is tagged v<version>, uses the notes file as its text and carries the APK named ...-v<version>.apk,
+# taken from the commit that first added it, so an APK later trimmed from docs/downloads (G1.12) is never lost.
+name: Publish releases
+on:
+  push:
+    branches: [main]
+    paths: ['docs/release-notes/**', '.github/workflows/release.yml']
+  workflow_dispatch:
+permissions:
+  contents: write
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - name: Create any missing releases
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          set -e
+          for f in $(ls docs/release-notes/v*.md | sort -V); do
+            tag=$(basename "$f" .md)
+            if gh release view "$tag" >/dev/null 2>&1; then echo "$tag already published"; continue; fi
+            title=$(sed -n 's/^# //p' "$f" | head -1)
+            apk=$(git log --diff-filter=A --name-only --format= -- "docs/downloads/*-$tag.apk" | grep . | head -1 || true)
+            target="$GITHUB_SHA"; files=()
+            if [ -n "$apk" ]; then
+              target=$(git log --diff-filter=A --format=%H -- "$apk" | tail -1)
+              git show "$target:$apk" > "/tmp/$(basename "$apk")"
+              files+=("/tmp/$(basename "$apk")")
+            fi
+            gh release create "$tag" "${files[@]}" --target "$target" --title "${title:-$tag}" --notes-file "$f"
+            echo "published $tag from $target with ${#files[@]} file(s)"
+          done
