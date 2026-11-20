@@ -4,6 +4,7 @@ Updated 2026-11-20. BC decides the order. Plan: `ideas/n63/PLAN.md` in game-stud
 
 ## Done
 
+- 0.4.0 (2026-11-20): painted islands (lighthouse, windmill, dock) and clouds, the side-view twin-engine on the start screen, the app icon (BC's pick C, repainted with the twin-engine), the name check (web search: no game named Updraft Aces).
 - 0.3.1 (2026-11-20): the play area fills the whole screen, upright and sideways, so you fly edge to edge (BC: "I need to be able to go edge to edge in flying in the game"). The player plane's left wing tip and the pilot's edge were clipped by the cut and are whole again (BC: "Left side of wing seems to be cutoff").
 - 0.3.0 (2026-11-20): BC's picks in. Twin-engine plane, coral monoplane wingmen, the storm olive and teal enemy set (fighter, swooper, gunner), the braided ginger pilot on the start screen, Titan One, Call to Adventure on the start screen and Beachfront Celebration in flight. Pilots: a sea shader under the planes and GPU particles for the smoke trail and bursts. Art cut from Gemini by `art_src/cut_art.py`.
 - 0.2.0 (2026-11-20): Spread, Wingmen and Shield power-ups dropped by full formation clears (set per wave in LDtk). Wingmen take a bullet each. Stage 1 now lives in `data/stage1.ldtk` (LDtk pilot I5, read straight from JSON, no plugin). The K8 easy mode pack, built here first: extra shield, slower enemies, softer hits, more checkpoints and a bullet glow, each its own switch.
@@ -11,15 +12,14 @@ Updated 2026-11-20. BC decides the order. Plan: `ideas/n63/PLAN.md` in game-stud
 
 ## Now
 
-- Waiting on BC: play 0.3.1 on the phone, sideways and upright.
-- Started for 0.4: name check (no game named Updraft Aces found), painted islands, clouds and a side-view plane from Gemini (`art_src/gemini/scenery.png`, `side_plane.png`), app icon options (`art_src/gemini/icons.png`, decision page 2026-11-20-n63-icon).
+- Waiting on BC: play 0.4.0. New icon, islands and clouds.
 
 ## Asked for by BC, not built yet
 
 3. 0.3: particles (smoke trails, debris, bursts) and a scrolling sky and sea shader (pilots).
-1. Full name check for Updraft Aces (G4.8): stores and trademarks. A web search only so far.
-2. Painted islands, clouds and the side-view plane on the start screen through Gemini.
-3. Stage 2.
+1. A trademark search for Updraft Aces before any store release (web search done 2026-11-20, no game by that name).
+2. Stage 2.
+3. Painted clouds and sky on the start screen.
 
 ## Ideas to choose from (BC picks by number)
 
@@ -43,6 +43,7 @@ Updated 2026-11-20. BC decides the order. Plan: `ideas/n63/PLAN.md` in game-stud
 - 2026-11-20, 9:51 AM: "I want to do the 1942 style plane shooter game". Soft fail, fantasy skies, clean toy render. Pilots: LDtk, particles and the sky shader, T1. Skip Pixelwright.
 - 2026-11-20, 9:57 AM: "No boss battles", "yes on name decision page", "a adult male pilot with a beard".
 - 2026-11-20, 9:59 AM: "N63 name: Updraft Aces."
+- 2026-11-20, 12:01 PM: "C for app icon". Gemini repainted C with the twin-engine (it had drawn the wingman's plane).
 - 2026-11-20, 11:44 AM: "move to next steps". 0.4 started.
 - 2026-11-20, 11:47 AM: "Left side of wing seems to be cutoff". Fixed in 0.3.1.
 - 2026-11-20, 11:49 AM: "I need to be able to go edge to edge in flying in the game. the width seems very narrow especially when playing turning my phone to the side mode on phone". Fixed in 0.3.1.

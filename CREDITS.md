@@ -1,6 +1,6 @@
 # Credits
 
-Updraft Aces is an original game. The clouds, islands, sea and every sound effect are made in code for this game. The pilot, the player plane, the wingmen and the enemy planes were made for this game with Gemini from original prompts (G8.3, G8.4). No personal names here (G1.11).
+Updraft Aces is an original game. The sea and every sound effect are made in code for this game. The pilot, the planes, the islands, the clouds and the app icon were made for this game with Gemini from original prompts (G8.3, G8.4). No personal names here (G1.11).
 
 ## Music
 
