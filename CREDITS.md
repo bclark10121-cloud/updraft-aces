@@ -8,6 +8,7 @@ Found through the Patch.gg asset library.
 
 - Start screen: "Call to Adventure" by Kevin MacLeod (incompetech.com, https://incompetech.com/music/royalty-free/index.html?isrc=USUAN1300022), licensed Creative Commons Attribution 4.0 International (https://creativecommons.org/licenses/by/4.0/). Changed: trimmed to a loop and level-matched.
 - Play: "Beachfront Celebration" by Kevin MacLeod (incompetech.com, https://incompetech.com/music/royalty-free/index.html?isrc=USUAN1200022), licensed Creative Commons Attribution 4.0 International (https://creativecommons.org/licenses/by/4.0/). Changed: trimmed to a loop and level-matched.
+- Stage 2 play: "At Launch" by Kevin MacLeod (incompetech.com, https://incompetech.com/music/royalty-free/index.html?isrc=USUAN1100539), licensed Creative Commons Attribution 4.0 International (https://creativecommons.org/licenses/by/4.0/). Found through Patch.gg. Changed: trimmed to a loop and level-matched.
 
 ## Font
 

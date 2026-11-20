@@ -4,6 +4,7 @@ Updated 2026-11-20. BC decides the order. Plan: `ideas/n63/PLAN.md` in game-stud
 
 ## Done
 
+- 0.5.0 (2026-11-20): Stage 2, Amber Canyon (BC's picks: Amber Canyon, Bombers, At Launch). `data/stage2.ldtk` from `tools/make_stage2_ldtk.py`, 42 waves in six sections. Bombers in pairs drop flak that bursts into rings. Canyon ground in the sea shader (`land`). Menu rows pick a stage, Stage 2 opens after a Cloud Harbor clear. Achievements Sundown and Flak Dancer.
 - 0.4.1 (2026-11-20): the start screen line says "A pilot" in place of "A bearded pilot" (BC: "change a bearded pilot, to just say pilot on the start screen, remove bearded"). The game page and Shelf tag match.
 - 0.4.0 (2026-11-20): painted islands (lighthouse, windmill, dock) and clouds, the side-view twin-engine on the start screen, the app icon (BC's pick C, repainted with the twin-engine), the name check (web search: no game named Updraft Aces).
 - 0.3.1 (2026-11-20): the play area fills the whole screen, upright and sideways, so you fly edge to edge (BC: "I need to be able to go edge to edge in flying in the game"). The player plane's left wing tip and the pilot's edge were clipped by the cut and are whole again (BC: "Left side of wing seems to be cutoff").
@@ -13,25 +14,23 @@ Updated 2026-11-20. BC decides the order. Plan: `ideas/n63/PLAN.md` in game-stud
 
 ## Now
 
-- Waiting on BC: play 0.4.0. New icon, islands and clouds.
+- Waiting on BC: play 0.5.0. Stage 2, Amber Canyon.
 
 ## Asked for by BC, not built yet
 
-3. 0.3: particles (smoke trails, debris, bursts) and a scrolling sky and sea shader (pilots).
 1. A trademark search for Updraft Aces before any store release (web search done 2026-11-20, no game by that name).
-2. Stage 2.
-3. Painted clouds and sky on the start screen.
+2. Painted clouds and sky on the start screen.
 
 ## Ideas to choose from (BC picks by number)
 
 1. Move the enemy wave code into the kit with Sunset Static (K rule 1). Needs BC's yes for `common/`.
 2. Make the T1 note tool a kit piece for every game if the pilot works.
 3. Move the K8 easy mode pack (`scripts/easy_pack.gd`) into the kit for every combat game. Needs BC's yes for `common/`.
-4. Make the bot harder to fool: Ace has zero hits in the 0.1 bot run, so Ace may need more bullets.
+4. Make the bot harder to fool: Ace has zero hits in the bot runs of both stages (0.5), so Ace may need more bullets.
 
 ## Later
 
-- Stage 2.
+- Stage 3.
 
 ## Not planned (they break the pillars)
 
