@@ -4,6 +4,7 @@ Updated 2026-11-20. BC decides the order. Plan: `ideas/n63/PLAN.md` in game-stud
 
 ## Done
 
+- 0.6.1 (2026-11-20): bugs B1 to B6 from the review. BC: "fix bugs first and go in your suggested order".
 - 0.6.0 (2026-11-20): BC's "Do 1,2,4,5,6". Painted start screen (Gemini sun, side-view clouds, cloud bank). Trademark search (`docs_name_check.md`). The game runs on kit 1.22.0: K2 Waves, K8 easy pack, the LDtk reader and T1 tester notes. Its own copies are gone. Same bot trace before and after.
 - 0.5.0 (2026-11-20): Stage 2, Amber Canyon (BC's picks: Amber Canyon, Bombers, At Launch). `data/stage2.ldtk` from `tools/make_stage2_ldtk.py`, 42 waves in six sections. Bombers in pairs drop flak that bursts into rings. Canyon ground in the sea shader (`land`). Menu rows pick a stage, Stage 2 opens after a Cloud Harbor clear. Achievements Sundown and Flak Dancer.
 - 0.4.1 (2026-11-20): the start screen line says "A pilot" in place of "A bearded pilot" (BC: "change a bearded pilot, to just say pilot on the start screen, remove bearded"). The game page and Shelf tag match.
@@ -15,7 +16,7 @@ Updated 2026-11-20. BC decides the order. Plan: `ideas/n63/PLAN.md` in game-stud
 
 ## Now
 
-- Waiting on BC: play 0.6.0. The painted start screen.
+- Building 0.7 next: ideas 1, 2, 4, 6, 7, 8 and 9 (Ace with teeth plus feel), then 0.8 and 0.9.
 
 ## Asked for by BC, not built yet
 
@@ -27,12 +28,12 @@ BC: "take a few minutes to review this game again with multiple agents and sugge
 
 ### Bugs (fix first)
 
-- B1. Old saves: a player who cleared Cloud Harbor before 0.5 finds Amber Canyon locked. `main.gd` merges `SAVE0` (`unlocked: 1`) before `play.start()` reads its `clears > 0` fallback. Verified. S.
-- B2. The "slower enemies" assist adds enemy fire: movement uses `easy.speed_k()` but `fire_t` counts real time, so gunners and bombers stay longer and fire about a third more. Verified. S.
-- B3. The plane can slide half off the right edge (side limit 16 is less than half the plane's width). S.
-- B4. Spread level marks draw under the Menu button in wide landscape. S.
-- B5. A Shield pickup at full shield does nothing but says "Shield +1". S.
-- B6. No save upgrade test: load `tests/saves/v1.json` and round-trip a Stage 2 save at a checkpoint. Would have caught B1. S.
+- B1. Fixed in 0.6.1. Old saves: a player who cleared Cloud Harbor before 0.5 finds Amber Canyon locked. `main.gd` merges `SAVE0` (`unlocked: 1`) before `play.start()` reads its `clears > 0` fallback. Verified. S.
+- B2. Fixed in 0.6.1. The "slower enemies" assist adds enemy fire: movement uses `easy.speed_k()` but `fire_t` counts real time, so gunners and bombers stay longer and fire about a third more. Verified. S.
+- B3. Fixed in 0.6.1. The plane can slide half off the right edge (side limit 16 is less than half the plane's width). S.
+- B4. Fixed in 0.6.1. Spread level marks draw under the Menu button in wide landscape. S.
+- B5. Fixed in 0.6.1. A Shield pickup at full shield does nothing but says "Shield +1". S.
+- B6. Fixed in 0.6.1. No save upgrade test: load `tests/saves/v1.json` and round-trip a Stage 2 save at a checkpoint. Would have caught B1. S.
 
 ### Ace with teeth (the bot takes zero hits on Ace in both stages)
 
