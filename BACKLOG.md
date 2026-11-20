@@ -4,6 +4,7 @@ Updated 2026-11-20. BC decides the order. Plan: `ideas/n63/PLAN.md` in game-stud
 
 ## Done
 
+- 0.12.0 (2026-11-20): review ideas 20 (rescue rafts), 22 (Score Attack) and 30 (tests for the 0.5 features).
 - 0.11.0 (2026-11-20): review ideas 11 (power-up tokens), 12 (sound and combo chime), 13 (start screen), 19 (breathers and the Grand Armada), 29 (lighter shader) and 31 (smaller music). BC: "game plays good, move to the next release".
 - 0.10.0 (2026-11-20): Stage 3, Aurora North (BC's picks: Aurora North, Balloon mines, Heroic Age). `data/stage3.ldtk` from `tools/make_stage3_ldtk.py`, 42 waves in six sections. Balloon mines, a night sea in the shader, four more medals, achievement Northern Lights.
 - 0.9.0 (2026-11-20): review idea 10, sideways phones. A shorter play area sideways keeps everything bigger, still edge to edge.
@@ -21,7 +22,7 @@ Updated 2026-11-20. BC decides the order. Plan: `ideas/n63/PLAN.md` in game-stud
 
 ## Now
 
-- Waiting on BC: play 0.11.0.
+- Waiting on BC: play 0.12.0.
 
 ## Asked for by BC, not built yet
 
@@ -67,9 +68,9 @@ BC: "take a few minutes to review this game again with multiple agents and sugge
 17. Done in 0.8. Shootable flak shells: pop them early for points. S.
 18. Done in 0.8. Ace score multiplier or a best score per level. S.
 19. Done in 0.11. Breathers before checkpoints and a "Grand Armada" finale fly-past (not a boss). M.
-20. Rescue pickups: castaways on islands and mesas, hover to rescue. As in Sky Force. M.
+20. Done in 0.12. Rescue pickups: castaways on islands and mesas, hover to rescue. As in Sky Force. M.
 21. Gold pickups from ground targets (boats, windmills, carts), worth most on their bright frame. As in Strikers 1945. S.
-22. Score Attack: a 2 or 5 minute run for a top 10 on the device. As in Star Soldier R. S to M.
+22. Done in 0.12. Score Attack: a 2 or 5 minute run for a top 10 on the device. As in Star Soldier R. S to M.
 23. Updraft gauge: coins fill it, trigger for a few seconds of bullet soaking and a multiplier. As in Jamestown. M.
 24. Daily Flight: a date-seeded stage with a twist, local best only. M.
 25. A hangar of two or three more planes unlocked by medals. L.
@@ -80,7 +81,7 @@ BC: "take a few minutes to review this game again with multiple agents and sugge
 27. Done in 0.8. Stage table: each stage row holds its music, scenery, clear achievement and unlock text, and the menu builds from it. Makes Stage 3 a data job. M.
 28. Split `play.gd` (1,194 lines): enemies, drawing, bot and test hooks into their own files. M.
 29. Done in 0.11. Canyon shader skips the sea math it throws away. S.
-30. Tests for the 0.5 features: flak hits and rolls, the Flak Dancer bonus, the locked menu row, stage and unlock after a reload. M.
+30. Done in 0.12. Tests for the 0.5 features: flak hits and rolls, the Flak Dancer bonus, the locked menu row, stage and unlock after a reload. M.
 31. Done in 0.11. Smaller music (re-encode at about 72 kbps, about 2 MB less on the web). S.
 32. Measure the checkpoint save on a real phone (1 to 2 ms spikes here, every 30 s). S.
 33. Build folder cleanup: 779 MB of old APKs and web folders. S.
