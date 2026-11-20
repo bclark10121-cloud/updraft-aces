@@ -4,6 +4,7 @@ Updated 2026-11-20. BC decides the order. Plan: `ideas/n63/PLAN.md` in game-stud
 
 ## Done
 
+- 0.6.0 (2026-11-20): BC's "Do 1,2,4,5,6". Painted start screen (Gemini sun, side-view clouds, cloud bank). Trademark search (`docs_name_check.md`). The game runs on kit 1.22.0: K2 Waves, K8 easy pack, the LDtk reader and T1 tester notes. Its own copies are gone. Same bot trace before and after.
 - 0.5.0 (2026-11-20): Stage 2, Amber Canyon (BC's picks: Amber Canyon, Bombers, At Launch). `data/stage2.ldtk` from `tools/make_stage2_ldtk.py`, 42 waves in six sections. Bombers in pairs drop flak that bursts into rings. Canyon ground in the sea shader (`land`). Menu rows pick a stage, Stage 2 opens after a Cloud Harbor clear. Achievements Sundown and Flak Dancer.
 - 0.4.1 (2026-11-20): the start screen line says "A pilot" in place of "A bearded pilot" (BC: "change a bearded pilot, to just say pilot on the start screen, remove bearded"). The game page and Shelf tag match.
 - 0.4.0 (2026-11-20): painted islands (lighthouse, windmill, dock) and clouds, the side-view twin-engine on the start screen, the app icon (BC's pick C, repainted with the twin-engine), the name check (web search: no game named Updraft Aces).
@@ -14,23 +15,20 @@ Updated 2026-11-20. BC decides the order. Plan: `ideas/n63/PLAN.md` in game-stud
 
 ## Now
 
-- Waiting on BC: play 0.5.0. Stage 2, Amber Canyon.
+- Waiting on BC: play 0.6.0. The painted start screen.
 
 ## Asked for by BC, not built yet
 
-1. A trademark search for Updraft Aces before any store release (web search done 2026-11-20, no game by that name).
-2. Painted clouds and sky on the start screen.
+- Nothing open.
 
 ## Ideas to choose from (BC picks by number)
 
-1. Move the enemy wave code into the kit with Sunset Static (K rule 1). Needs BC's yes for `common/`.
-2. Make the T1 note tool a kit piece for every game if the pilot works.
-3. Move the K8 easy mode pack (`scripts/easy_pack.gd`) into the kit for every combat game. Needs BC's yes for `common/`.
-4. Make the bot harder to fool: Ace has zero hits in the bot runs of both stages (0.5), so Ace may need more bullets.
+1. Make the bot harder to fool: Ace has zero hits in the bot runs of both stages (0.5), so Ace may need more bullets.
 
 ## Later
 
 - Stage 3.
+- A trademark attorney's clearance and a filing for "Updraft Aces" before a paid Play Store launch (search done in 0.6).
 
 ## Not planned (they break the pillars)
 
