@@ -4,6 +4,7 @@ Updated 2026-11-20. BC decides the order. Plan: `ideas/n63/PLAN.md` in game-stud
 
 ## Done
 
+- 0.7.0 (2026-11-20): review ideas 1, 2, 4, 5, 6, 7, 8 and 9 (Ace with teeth plus feel). D1 set to keep power-ups through a rewind, D2 left as is. Both still BC's call.
 - 0.6.1 (2026-11-20): bugs B1 to B6 from the review. BC: "fix bugs first and go in your suggested order".
 - 0.6.0 (2026-11-20): BC's "Do 1,2,4,5,6". Painted start screen (Gemini sun, side-view clouds, cloud bank). Trademark search (`docs_name_check.md`). The game runs on kit 1.22.0: K2 Waves, K8 easy pack, the LDtk reader and T1 tester notes. Its own copies are gone. Same bot trace before and after.
 - 0.5.0 (2026-11-20): Stage 2, Amber Canyon (BC's picks: Amber Canyon, Bombers, At Launch). `data/stage2.ldtk` from `tools/make_stage2_ldtk.py`, 42 waves in six sections. Bombers in pairs drop flak that bursts into rings. Canyon ground in the sea shader (`land`). Menu rows pick a stage, Stage 2 opens after a Cloud Harbor clear. Achievements Sundown and Flak Dancer.
@@ -16,7 +17,7 @@ Updated 2026-11-20. BC decides the order. Plan: `ideas/n63/PLAN.md` in game-stud
 
 ## Now
 
-- Building 0.7 next: ideas 1, 2, 4, 6, 7, 8 and 9 (Ace with teeth plus feel), then 0.8 and 0.9.
+- Building 0.8 next: ideas 15, 16, 17, 18 and 27, then 0.9.
 
 ## Asked for by BC, not built yet
 
@@ -37,18 +38,18 @@ BC: "take a few minutes to review this game again with multiple agents and sugge
 
 ### Ace with teeth (the bot takes zero hits on Ace in both stages)
 
-1. Enemy fire patterns: small planes fire short fans or streams, swoopers fire too. Today each small plane fires one aimed shot and most die in 1.4 s, so moving beats every shot. M.
-2. Ace different in kind: small planes fire twice, Ace-only waves (a new LDtk field). S to M.
+1. Done in 0.7. Enemy fire patterns: small planes fire short fans or streams, swoopers fire too. Today each small plane fires one aimed shot and most die in 1.4 s, so moving beats every shot. M.
+2. Done in 0.7. Ace different in kind: small planes fire twice, Ace-only waves (a new LDtk field). S to M.
 3. Difficulty that rises across a stage: bullets per Stage 1 section run 13, 14, 6, 2, 12, 12. Fewer power-up drops (14 in 48 waves), denser late waves. M.
-4. Give the roll a job: threats only a roll beats (close flak, bullet walls), points and a "Close shave!" pop for rolling through bullets. S to M.
-5. Pressure checks in the test gate: minimum bullets per section and a weaving bot that takes some hits on Ace. S.
+4. Partly done in 0.7 (close shave points and pops; roll-only threats still open). Give the roll a job: threats only a roll beats (close flak, bullet walls), points and a "Close shave!" pop for rolling through bullets. S to M.
+5. Done in 0.7. Pressure checks in the test gate: minimum bullets per section and a weaving bot that takes some hits on Ace. S.
 
 ### Feel and readability
 
-6. Haptics: Settings already has Rumble but play never calls it. Buzz on hit, roll, formation clear and shield down. S.
-7. Hits that feel like hits: a white flash and spark on enemy hits, and "+1000" pops at the last plane instead of a mid-screen banner. S.
-8. Canyon bullets: a dark outline or a cooler color so bullets read on sand and mesas. Dust clouds no longer draw over bullets near the plane. S.
-9. HUD: three charge pips and an icon on the Roll button, a dark pill behind shield and score, a bigger score, no HUD shake. S.
+6. Done in 0.7. Haptics: Settings already has Rumble but play never calls it. Buzz on hit, roll, formation clear and shield down. S.
+7. Done in 0.7. Hits that feel like hits: a white flash and spark on enemy hits, and "+1000" pops at the last plane instead of a mid-screen banner. S.
+8. Done in 0.7. Canyon bullets: a dark outline or a cooler color so bullets read on sand and mesas. Dust clouds no longer draw over bullets near the plane. S.
+9. Done in 0.7. HUD: three charge pips and an icon on the Roll button, a dark pill behind shield and score, a bigger score, no HUD shake. S.
 10. Sideways phones: cap the play width so the plane stays big, and put the HUD in the side margins. M.
 11. Power-ups with their own shapes and icons in the game font (Spread is the same cream as your shots today). S to M.
 12. Softer shot sound (it plays 9 times a second) and a rising combo chime. Softer default hurt flash (35 percent). S.
@@ -83,7 +84,7 @@ BC: "take a few minutes to review this game again with multiple agents and sugge
 
 ### Needs a decision from BC
 
-- D1. A rewind clears Spread and Wingmen. BRIEF.md says a rewind keeps everything. Keeping them makes the game gentler. Clearing them is more classic. Which?
+- D1. (0.7 default: kept.) A rewind clears Spread and Wingmen. BRIEF.md says a rewind keeps everything. Keeping them makes the game gentler. Clearing them is more classic. Which?
 - D2. Rolling stops your guns. Keep it as the roll's cost, or let auto-fire run through a roll?
 
 ## Later
