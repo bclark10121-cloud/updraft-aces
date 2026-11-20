@@ -1,22 +1,16 @@
 # Credits
 
-Updraft Aces is an original game. <What is original and built in code.> No personal names here (G1.11).
+Updraft Aces is an original game. The planes, clouds, islands, the start screen and every sound are made in code for this game. No personal names here (G1.11).
 
-## Music (found through the Patch.gg asset library)
+## Music
 
-- "<Track>" by <Artist>. <Source link>
-  Licensed <licence>. <Licence link>
-  Changes: <re-encoded to Ogg Vorbis, trimmed>
+- Title loop: made in code by the studio starter (`tools/make_starter_audio.py`). A stand-in until a Patch.gg track is picked.
+- Play march: made in code (`tools/make_sfx.py`). A stand-in until a Patch.gg track is picked.
 
-## Sounds (found through the Patch.gg asset library)
+## Sounds
 
-- <Sound> by <Maker>. <Source link>
-  Licensed <licence>. <Licence link>
-
-## Made for this game
-
-- <Sounds made by tools/common/make_sfx.py, models built in code>
+- Shots, explosions, hits, the roll, the formation bonus, checkpoints and the shield break: made in code (`tools/make_sfx.py`).
 
 ## Tools
 
-- Godot Engine 4.6. https://godotengine.org (MIT licence)
+- Godot Engine 4.7. https://godotengine.org (MIT licence)
