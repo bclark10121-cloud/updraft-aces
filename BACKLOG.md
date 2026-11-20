@@ -4,6 +4,7 @@ Updated 2026-11-20. BC decides the order. Plan: `ideas/n63/PLAN.md` in game-stud
 
 ## Done
 
+- 0.8.0 (2026-11-20): review ideas 15 (medals), 16 (chain), 17 (shootable flak), 18 (Ace points) and 27 (stage table).
 - 0.7.0 (2026-11-20): review ideas 1, 2, 4, 5, 6, 7, 8 and 9 (Ace with teeth plus feel). D1 set to keep power-ups through a rewind, D2 left as is. Both still BC's call.
 - 0.6.1 (2026-11-20): bugs B1 to B6 from the review. BC: "fix bugs first and go in your suggested order".
 - 0.6.0 (2026-11-20): BC's "Do 1,2,4,5,6". Painted start screen (Gemini sun, side-view clouds, cloud bank). Trademark search (`docs_name_check.md`). The game runs on kit 1.22.0: K2 Waves, K8 easy pack, the LDtk reader and T1 tester notes. Its own copies are gone. Same bot trace before and after.
@@ -17,7 +18,7 @@ Updated 2026-11-20. BC decides the order. Plan: `ideas/n63/PLAN.md` in game-stud
 
 ## Now
 
-- Building 0.8 next: ideas 15, 16, 17, 18 and 27, then 0.9.
+- Building 0.9 next: idea 10 (sideways phones), then a Stage 3 decision page.
 
 ## Asked for by BC, not built yet
 
@@ -58,10 +59,10 @@ BC: "take a few minutes to review this game again with multiple agents and sugge
 
 ### Replay value (from the genre review)
 
-15. Stage medals, four per stage: clear every formation, no hits, rescue everyone, close shaves. As in Sky Force. M.
-16. Formation chain: back-to-back full clears build a chain bonus, a miss breaks it. As in Ikaruga. S.
-17. Shootable flak shells: pop them early for points. S.
-18. Ace score multiplier or a best score per level. S.
+15. Done in 0.8. Stage medals, four per stage: clear every formation, no hits, rescue everyone, close shaves. As in Sky Force. M.
+16. Done in 0.8. Formation chain: back-to-back full clears build a chain bonus, a miss breaks it. As in Ikaruga. S.
+17. Done in 0.8. Shootable flak shells: pop them early for points. S.
+18. Done in 0.8. Ace score multiplier or a best score per level. S.
 19. Breathers before checkpoints and a "Grand Armada" finale fly-past (not a boss). M.
 20. Rescue pickups: castaways on islands and mesas, hover to rescue. As in Sky Force. M.
 21. Gold pickups from ground targets (boats, windmills, carts), worth most on their bright frame. As in Strikers 1945. S.
@@ -73,7 +74,7 @@ BC: "take a few minutes to review this game again with multiple agents and sugge
 
 ### Under the hood
 
-27. Stage table: each stage row holds its music, scenery, clear achievement and unlock text, and the menu builds from it. Makes Stage 3 a data job. M.
+27. Done in 0.8. Stage table: each stage row holds its music, scenery, clear achievement and unlock text, and the menu builds from it. Makes Stage 3 a data job. M.
 28. Split `play.gd` (1,194 lines): enemies, drawing, bot and test hooks into their own files. M.
 29. Canyon shader skips the sea math it throws away. S.
 30. Tests for the 0.5 features: flak hits and rolls, the Flak Dancer bonus, the locked menu row, stage and unlock after a reload. M.
