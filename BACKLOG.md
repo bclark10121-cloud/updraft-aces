@@ -4,6 +4,7 @@ Updated 2026-11-20. BC decides the order. Plan: `ideas/n63/PLAN.md` in game-stud
 
 ## Done
 
+- 0.11.0 (2026-11-20): review ideas 11 (power-up tokens), 12 (sound and combo chime), 13 (start screen), 19 (breathers and the Grand Armada), 29 (lighter shader) and 31 (smaller music). BC: "game plays good, move to the next release".
 - 0.10.0 (2026-11-20): Stage 3, Aurora North (BC's picks: Aurora North, Balloon mines, Heroic Age). `data/stage3.ldtk` from `tools/make_stage3_ldtk.py`, 42 waves in six sections. Balloon mines, a night sea in the shader, four more medals, achievement Northern Lights.
 - 0.9.0 (2026-11-20): review idea 10, sideways phones. A shorter play area sideways keeps everything bigger, still edge to edge.
 - 0.8.0 (2026-11-20): review ideas 15 (medals), 16 (chain), 17 (shootable flak), 18 (Ace points) and 27 (stage table).
@@ -20,7 +21,7 @@ Updated 2026-11-20. BC decides the order. Plan: `ideas/n63/PLAN.md` in game-stud
 
 ## Now
 
-- Waiting on BC: play 0.10.0, Stage 3 Aurora North.
+- Waiting on BC: play 0.11.0.
 
 ## Asked for by BC, not built yet
 
@@ -54,9 +55,9 @@ BC: "take a few minutes to review this game again with multiple agents and sugge
 8. Done in 0.7. Canyon bullets: a dark outline or a cooler color so bullets read on sand and mesas. Dust clouds no longer draw over bullets near the plane. S.
 9. Done in 0.7. HUD: three charge pips and an icon on the Roll button, a dark pill behind shield and score, a bigger score, no HUD shake. S.
 10. Done in 0.9 (shorter area sideways, not a capped width, to keep BC's edge to edge). Sideways phones: cap the play width so the plane stays big, and put the HUD in the side margins. M.
-11. Power-ups with their own shapes and icons in the game font (Spread is the same cream as your shots today). S to M.
-12. Softer shot sound (it plays 9 times a second) and a rising combo chime. Softer default hurt flash (35 percent). S.
-13. Start screen on upright phones: pilot not cut off, bigger hint text. Records panel and menu header polish. S.
+11. Done in 0.11. Power-ups with their own shapes and icons in the game font (Spread is the same cream as your shots today). S to M.
+12. Done in 0.11. Softer shot sound (it plays 9 times a second) and a rising combo chime. Softer default hurt flash (35 percent). S.
+13. Done in 0.11. Start screen on upright phones: pilot not cut off, bigger hint text. Records panel and menu header polish. S.
 14. Bigger menu rows on phones (32 px today, 48 is the phone norm). Kit change. M.
 
 ### Replay value (from the genre review)
@@ -65,7 +66,7 @@ BC: "take a few minutes to review this game again with multiple agents and sugge
 16. Done in 0.8. Formation chain: back-to-back full clears build a chain bonus, a miss breaks it. As in Ikaruga. S.
 17. Done in 0.8. Shootable flak shells: pop them early for points. S.
 18. Done in 0.8. Ace score multiplier or a best score per level. S.
-19. Breathers before checkpoints and a "Grand Armada" finale fly-past (not a boss). M.
+19. Done in 0.11. Breathers before checkpoints and a "Grand Armada" finale fly-past (not a boss). M.
 20. Rescue pickups: castaways on islands and mesas, hover to rescue. As in Sky Force. M.
 21. Gold pickups from ground targets (boats, windmills, carts), worth most on their bright frame. As in Strikers 1945. S.
 22. Score Attack: a 2 or 5 minute run for a top 10 on the device. As in Star Soldier R. S to M.
@@ -78,9 +79,9 @@ BC: "take a few minutes to review this game again with multiple agents and sugge
 
 27. Done in 0.8. Stage table: each stage row holds its music, scenery, clear achievement and unlock text, and the menu builds from it. Makes Stage 3 a data job. M.
 28. Split `play.gd` (1,194 lines): enemies, drawing, bot and test hooks into their own files. M.
-29. Canyon shader skips the sea math it throws away. S.
+29. Done in 0.11. Canyon shader skips the sea math it throws away. S.
 30. Tests for the 0.5 features: flak hits and rolls, the Flak Dancer bonus, the locked menu row, stage and unlock after a reload. M.
-31. Smaller music (re-encode at about 72 kbps, about 2 MB less on the web). S.
+31. Done in 0.11. Smaller music (re-encode at about 72 kbps, about 2 MB less on the web). S.
 32. Measure the checkpoint save on a real phone (1 to 2 ms spikes here, every 30 s). S.
 33. Build folder cleanup: 779 MB of old APKs and web folders. S.
 34. Kit candidates (needs BC's yes): the focus fix in `main.gd` and the particle helpers. S.
