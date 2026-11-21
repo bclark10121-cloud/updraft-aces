@@ -1,9 +1,10 @@
 # Updraft Aces: backlog
 
-Updated 2026-11-20. BC decides the order. Plan: `ideas/n63/PLAN.md` in game-studio.
+Updated 2026-11-21. BC decides the order. Plan: `ideas/n63/PLAN.md` in game-studio.
 
 ## Done
 
+- 0.14.0 (2026-11-21): the Android release. BC: "what are improvments that can be made to the android version that we are not using today?", then "move forward and add 1-11" and "actually do add tilt controls". All twelve items from the Android review below. Kit 1.24.1.
 - 0.13.0 (2026-11-20): BC's ask "a little faster when playing on widescreen, maybe add speed power ups": side to side speed grows with the screen's width, plus a pink Speed power-up (two levels). Review ideas 4 (bullet walls only a roll beats), 14 (menu rows at least 48 dp on phones, kit 1.24.0), 21 (gold coins), 28 (`play.gd` split in three), 32 (checkpoint save measured) and 34 (focus guard and particle helpers moved into kit 1.24.0). D1 answered: keep power-ups through a rewind. D2 answered: the guns keep firing through a roll. Stage 4 decision page out.
 - 0.12.0 (2026-11-20): review ideas 20 (rescue rafts), 22 (Score Attack) and 30 (tests for the 0.5 features).
 - 0.11.0 (2026-11-20): review ideas 11 (power-up tokens), 12 (sound and combo chime), 13 (start screen), 19 (breathers and the Grand Armada), 29 (lighter shader) and 31 (smaller music). BC: "game plays good, move to the next release".
@@ -23,7 +24,32 @@ Updated 2026-11-20. BC decides the order. Plan: `ideas/n63/PLAN.md` in game-stud
 
 ## Now
 
-- Waiting on BC: play 0.12.0.
+- Waiting on BC: play 0.14.0 on the phone. First APK on the Mobile renderer. Check tilt direction, the buzzes, the camera hole and the frame rate.
+
+## Android review 2026-11-21 (0.13.0, read from the code, the export settings and the studio's Android research)
+
+BC picked all twelve. Built in 0.14.0.
+
+- A1. Done in 0.14. Android back swipe: closes the top panel or opens the Menu (E6.6). S.
+- A2. Done in 0.14. Safe area: the HUD keeps clear of the camera hole, corners and gesture bar. S to M.
+- A3. Done in 0.14. Buzz styles: 14 events on the kit's named styles, a climbing buzz for the Grand Armada. S.
+- A4. Done in 0.14. Feel check at 60, 90 and 120 Hz (`tests/feel_check.gd`). S.
+- A5. Done in 0.14 for nine sprites (plane, wingmen, four enemies, three rafts), APK only. The mine, islands and clouds need new, bigger art. S to M.
+- A6. Done in 0.14. Soft shadows, wrecks that fall and splash, spray under a roll. S.
+- A7. Done in 0.14 as soft halos, not a bloom pass (measured: the bloom pass cut the browser build to a third). Settings > Glow. S.
+- A8. Done in 0.14. Wing tip vapor, smoke on damaged gunners and bombers, round soft particles. "Spray at low passes" became spray under a roll. M.
+- A9. Done in 0.14. Richer sea on Android in its own shader file: foam rings, shallows, sun and moon glitter, river sparkle. S to M.
+- A10. Done in 0.14. App category Game. S.
+- A11. Done in 0.14. Mobile renderer (Vulkan) for the APK, Swappy mode 0, baked shaders. Real HDR glow tried and left out (menu text got harder to read). M.
+- A12. Done in 0.14. Tilt to steer: Settings switch, three strengths, Recenter tilt. Android only. S to M.
+
+Follow-ups from 0.14 (BC picks by number):
+
+- A13. Sharper islands, clouds and the balloon mine: new Gemini pictures at twice the size, APK only. S to M.
+- A14. A Flip tilt switch if tilt flies the wrong way on a phone, or if BC likes it reversed. S.
+- A15. Measure on the Fold and the Retroid: frame rate at 120 Hz, battery and heat of the Mobile renderer against 0.13.0, the checkpoint save (idea 32). Needs BC's phone. S.
+- A16. Kit ideas, each needs BC's yes: the safe area in `screen_fit.gd` so the start screen and Settings keep clear of the camera hole too, the back swipe in the starter's `main.gd`, a baker option in `sign_android.sh` (today `tools/godot_baker.sh` stands in), the halo layer as a kit piece for Sunset Static and Tiny Tailwind. S each.
+- A17. HDR glow again once the kit menus are checked under linear blending. M.
 
 ## Asked for by BC, not built yet
 
