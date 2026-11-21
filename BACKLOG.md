@@ -4,6 +4,7 @@ Updated 2026-11-21. BC decides the order. Plan: `ideas/n63/PLAN.md` in game-stud
 
 ## Done
 
+- 0.16.0 (2026-11-21): Stage 4, Thunderhead Reach (BC's picks: Thunderhead Reach, dive gliders, Achilles). Storm sea, rain, lightning (soft with Reduce flashing, off with Reduce motion), dive gliders, achievement Eye of the Storm.
 - 0.15.0 (2026-11-21): A13 (new Gemini scenery, sharper in the APK), A16 (kit 1.25.0: safe area, halo glow piece, baker in signing) and A17 (HDR glow on the play field only, off by default, Tester tools > Look). BC: "a13 a16 a17".
 - 0.14.0 (2026-11-21): the Android release. BC: "what are improvments that can be made to the android version that we are not using today?", then "move forward and add 1-11" and "actually do add tilt controls". All twelve items from the Android review below. Kit 1.24.1.
 - 0.13.0 (2026-11-20): BC's ask "a little faster when playing on widescreen, maybe add speed power ups": side to side speed grows with the screen's width, plus a pink Speed power-up (two levels). Review ideas 4 (bullet walls only a roll beats), 14 (menu rows at least 48 dp on phones, kit 1.24.0), 21 (gold coins), 28 (`play.gd` split in three), 32 (checkpoint save measured) and 34 (focus guard and particle helpers moved into kit 1.24.0). D1 answered: keep power-ups through a rewind. D2 answered: the guns keep firing through a roll. Stage 4 decision page out.
@@ -25,8 +26,8 @@ Updated 2026-11-21. BC decides the order. Plan: `ideas/n63/PLAN.md` in game-stud
 
 ## Now
 
-- Waiting on BC: play 0.15.0 on the phone (tilt direction, buzzes, camera hole, frame rate, HDR glow in Tester tools).
-- Next: Stage 4, Thunderhead Reach, as 0.16.0.
+- Waiting on BC: play 0.16.0 on the phone (Stage 4 and the gliders, tilt direction, buzzes, camera hole, frame rate, HDR glow in Tester tools).
+- D3. Glider balance: about 14 of 48 gliders dive on Standard because the plane shoots them first. Keep, or make more dive (faster slide-in, or no hits until they hang)?
 
 ## Android review 2026-11-21 (0.13.0, read from the code, the export settings and the studio's Android research)
 
@@ -124,7 +125,7 @@ BC: "take a few minutes to review this game again with multiple agents and sugge
 
 ## Later
 
-- Stage 4, 0.16.0 (BC's picks 2026-11-21, 10:31 AM): Thunderhead Reach, dive gliders, Achilles. After 0.15.0 ("then afterwards"). Gemini art made 2026-11-21: `art_src/gemini/s4_*.png` (sea stacks, a reef with a wreck, a lighthouse islet, a hut islet, four thunderheads, the dive glider).
+- Done in 0.16.0. Stage 4 (BC's picks 2026-11-21, 10:31 AM): Thunderhead Reach, dive gliders, Achilles. After 0.15.0 ("then afterwards"). Gemini art made 2026-11-21: `art_src/gemini/s4_*.png` (sea stacks, a reef with a wreck, a lighthouse islet, a hut islet, four thunderheads, the dive glider).
 - A trademark attorney's clearance and a filing for "Updraft Aces" before a paid Play Store launch (search done in 0.6).
 
 ## Not planned (they break the pillars)
