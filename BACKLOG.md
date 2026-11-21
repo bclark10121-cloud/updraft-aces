@@ -4,6 +4,7 @@ Updated 2026-11-21. BC decides the order. Plan: `ideas/n63/PLAN.md` in game-stud
 
 ## Done
 
+- 0.15.0 (2026-11-21): A13 (new Gemini scenery, sharper in the APK), A16 (kit 1.25.0: safe area, halo glow piece, baker in signing) and A17 (HDR glow on the play field only, off by default, Tester tools > Look). BC: "a13 a16 a17".
 - 0.14.0 (2026-11-21): the Android release. BC: "what are improvments that can be made to the android version that we are not using today?", then "move forward and add 1-11" and "actually do add tilt controls". All twelve items from the Android review below. Kit 1.24.1.
 - 0.13.0 (2026-11-20): BC's ask "a little faster when playing on widescreen, maybe add speed power ups": side to side speed grows with the screen's width, plus a pink Speed power-up (two levels). Review ideas 4 (bullet walls only a roll beats), 14 (menu rows at least 48 dp on phones, kit 1.24.0), 21 (gold coins), 28 (`play.gd` split in three), 32 (checkpoint save measured) and 34 (focus guard and particle helpers moved into kit 1.24.0). D1 answered: keep power-ups through a rewind. D2 answered: the guns keep firing through a roll. Stage 4 decision page out.
 - 0.12.0 (2026-11-20): review ideas 20 (rescue rafts), 22 (Score Attack) and 30 (tests for the 0.5 features).
@@ -24,7 +25,8 @@ Updated 2026-11-21. BC decides the order. Plan: `ideas/n63/PLAN.md` in game-stud
 
 ## Now
 
-- Waiting on BC: play 0.14.0 on the phone. First APK on the Mobile renderer. Check tilt direction, the buzzes, the camera hole and the frame rate.
+- Waiting on BC: play 0.15.0 on the phone (tilt direction, buzzes, camera hole, frame rate, HDR glow in Tester tools).
+- Next: Stage 4, Thunderhead Reach, as 0.16.0.
 
 ## Android review 2026-11-21 (0.13.0, read from the code, the export settings and the studio's Android research)
 
@@ -45,11 +47,12 @@ BC picked all twelve. Built in 0.14.0.
 
 Follow-ups from 0.14 (BC picks by number):
 
-- A13. Sharper islands, clouds and the balloon mine: new Gemini pictures at twice the size, APK only. S to M.
+- A13. Done in 0.15. Sharper islands, clouds and the balloon mine: new Gemini pictures at twice the size, APK only. S to M.
 - A14. A Flip tilt switch if tilt flies the wrong way on a phone, or if BC likes it reversed. S.
 - A15. Measure on the Fold and the Retroid: frame rate at 120 Hz, battery and heat of the Mobile renderer against 0.13.0, the checkpoint save (idea 32). Needs BC's phone. S.
-- A16. Kit ideas, each needs BC's yes: the safe area in `screen_fit.gd` so the start screen and Settings keep clear of the camera hole too, the back swipe in the starter's `main.gd`, a baker option in `sign_android.sh` (today `tools/godot_baker.sh` stands in), the halo layer as a kit piece for Sunset Static and Tiny Tailwind. S each.
-- A17. HDR glow again once the kit menus are checked under linear blending. M.
+- A16. Done in 0.15 (kit 1.25.0). Kit ideas, each needs BC's yes: the safe area in `screen_fit.gd` so the start screen and Settings keep clear of the camera hole too, the back swipe in the starter's `main.gd`, a baker option in `sign_android.sh` (today `tools/godot_baker.sh` stands in), the halo layer as a kit piece for Sunset Static and Tiny Tailwind. S each.
+- A17. Done in 0.15: HDR glow on the play field only, in its own layer. Off by default (software Vulkan: 31 to 54 ms a frame). Try it on the phone in Tester tools > Look. M.
+- A18. Kit fixes found in 0.15: `sync_common.sh` deletes the committed `.uid` files in the kit folders. Panel covers under an inset safe root leave a thin undimmed strip at the camera hole. Needs BC's yes. S.
 
 ## Asked for by BC, not built yet
 
@@ -121,7 +124,7 @@ BC: "take a few minutes to review this game again with multiple agents and sugge
 
 ## Later
 
-- Stage 4: decision page out 2026-11-20 (Sky Gardens, Thunderhead Reach or Lantern Festival. Dive gliders, tail chasers or the rival ace. Upbeat Forever, Achilles or Danger Storm). https://bclark10121-cloud.github.io/bc-decisions/2026-11-20-n63-stage4/
+- Stage 4, 0.16.0 (BC's picks 2026-11-21, 10:31 AM): Thunderhead Reach, dive gliders, Achilles. After 0.15.0 ("then afterwards"). Gemini art made 2026-11-21: `art_src/gemini/s4_*.png` (sea stacks, a reef with a wreck, a lighthouse islet, a hut islet, four thunderheads, the dive glider).
 - A trademark attorney's clearance and a filing for "Updraft Aces" before a paid Play Store launch (search done in 0.6).
 
 ## Not planned (they break the pillars)
@@ -132,6 +135,8 @@ BC: "take a few minutes to review this game again with multiple agents and sugge
 
 ## Decisions from BC
 
+- 2026-11-21, 10:30 AM: "a13 a16 a17". A13: "New Gemini art" (picked over an upscale of the 0.14 art).
+- 2026-11-21, 10:31 AM: "Stage 4 setting: Thunderhead Reach. New enemy kind: Dive gliders. Stage 4 play music: Achilles." To build after A13, A16 and A17.
 - 2026-11-20, 9:51 AM: "I want to do the 1942 style plane shooter game". Soft fail, fantasy skies, clean toy render. Pilots: LDtk, particles and the sky shader, T1. Skip Pixelwright.
 - 2026-11-20, 9:57 AM: "No boss battles", "yes on name decision page", "a adult male pilot with a beard".
 - 2026-11-20, 9:59 AM: "N63 name: Updraft Aces."
